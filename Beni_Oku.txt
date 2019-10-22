@@ -1,0 +1,16 @@
+---SAND BALL CLONE FOR UNİTY3D----
+-Voxel terrain oluşturulması;
+Mantığı gereği bir "Quad" objesini marching squares mantığı ile dinamik olarak binlerce parçaya bölünerek
+Genarate bir voxel terrain oluşturulur.Ancak;
+Benim oluşturduğum terrainde parçalara/ızgalara pollygon collider2d dinamik ve manuel olarak eklenmesine rağmen 
+"top"objesiyle bir etkileşime girmemesinden dolayı bu yöntemi kullanmak yerine daha zor ve ilkel olan bir sprite objesini
+küçük parçalara ayırarak manuel bir voxel terrain oluşturdum.
+
+-Performans problemleri;
+Sahnede sadece terrainde yüzlerce küçük sprite objesi ve colliderlar olasından ötürü bir performans problemi oluşması 
+kaçınılmazdı.Ancak oynanışı olumsuz etkilecek derece bir performans problemi olmamasından ötürü optimizasyona gerek duyulmadı
+
+-Terrain Deformasyonu;
+boş bir objeye  circle collider atandı.Objenin mouse'u takip etmesi sağlandı.Collider yanlızca click/dokunmada aktif olacak
+şekilde ayarlanarak temas ettiği "sand" objesini yok etmesi ile terrain deformasyonu sağlandı.
+
